@@ -19,5 +19,7 @@ module OurOrder
   class Application < Rails::Application
     config.load_defaults 6.1
     config.api_only = true
+    # Custom directories with classes and modules you want to be autoloadable.
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
   end
 end
