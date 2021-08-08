@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   def validate_age
     if birthday.present? && birthday > 16.years.ago
-      errors.add(:birthday, 'You should be over 16 years old')
+      errors.add :birthday, t('.validate.age_restriction')
     end
   end
 end

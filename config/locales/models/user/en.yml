@@ -1,0 +1,21 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            role:
+              required: Role not exist
+            phone_number:
+              blank: Please enter phone number
+              invalid: Invalid phone number
+            email:
+              blank: Please enter email
+              invalid: Email invalid
+            name:
+              blank: Please enter name
+              too_long: Name is too long
+              too_short: Name is too short
+  user:
+    validate:
+      age_restriction: You should be over 16 years old

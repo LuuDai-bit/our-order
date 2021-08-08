@@ -1,0 +1,21 @@
+vi:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            role:
+              required: Chức danh không tồn tại
+            phone_number:
+              blank: Vui lòng nhập số điện thoại
+              invalid: Số điện thoại không hợp lệ
+            email:
+              blank: Vui lòng nhập email
+              invalid: Email không hợp lệ
+            name:
+              blank: Vui lòng nhập tên
+              too_long: Tên quá dài
+              too_short: Tên quá ngắn
+  user:
+    validate:
+      age_restriction: Người dùng phải trên 16 tuổi
