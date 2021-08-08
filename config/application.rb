@@ -21,5 +21,9 @@ module OurOrder
     config.api_only = true
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
+    # Config I18n
+    I18n.available_locales = %i(en vi)
+    config.i18n.default_locale = :vi
+    config.i18n.load_path = Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end

@@ -1,0 +1,6 @@
+en:
+  users_controller:
+    errors_messages:
+      not_found: User not found
+      invalid_params: Invalid params
+      delete_error: An error occurs when delete

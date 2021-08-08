@@ -7,21 +7,14 @@ class UsersController < ApplicationController
     render json: @users
   end
 
-  def show
-    @user = User.find_by id: params[:id]
-    if @user
-      render json: @user
-    else
-      bad_request_error 'User not found'
-    end
-  end
+  def show; end
 
   def create
     @user = User.create user_params
     if @user.errors.blank?
       render json: @user
     else
-      bad_request_error 'Invalid params', @user.errors.messages
+      bad_request_error I18n.t('invalid_params'), @user.errors.messages
     end
   end
 
@@ -52,6 +45,6 @@ class UsersController < ApplicationController
 
     return if @user
 
-    bad_request_error 'User not found', @user.errors.messages
+    bad_request_error t('.errors_messages.not_found')
   end
 end

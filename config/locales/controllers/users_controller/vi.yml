@@ -1,0 +1,6 @@
+vi:
+  users_controller:
+    errors_messages:
+      not_found: Không tìm thấy người dùng
+      invalid_params: Các trường bị sai
+      delete_error: Có lỗi xảy ra khi xóa bản ghi
