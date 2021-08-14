@@ -11,9 +11,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'mysql2'
 gem 'rack-cors'
 gem 'kaminari'
+gem 'foreman'
+gem 'byebug'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'figaro'
 end
 
 group :development do
