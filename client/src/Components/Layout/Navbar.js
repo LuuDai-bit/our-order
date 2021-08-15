@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import categories from "./header-items";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const namespaces = ["home", "users"];
+  const [t] = useTranslation(namespaces);
   return (
     <ul
       class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
@@ -24,7 +27,7 @@ const Navbar = () => {
           <>
             <li className="nav-item active">
               <Link className="nav-link" to={category.url}>
-                {category.name}
+                {t(`${category.name}:title`)}
               </Link>
             </li>
             <hr className="sidebar-divider" />
