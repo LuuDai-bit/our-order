@@ -20,8 +20,6 @@ i18next.init({
   resources,
   lng: "vi",
 
-  keySeparator: false,
-
   interpolation: {
     escapeValue: false,
   },
