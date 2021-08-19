@@ -7,7 +7,9 @@ class UsersController < ApplicationController
     render json: @users
   end
 
-  def show; end
+  def show
+    render json: @user
+  end
 
   def create
     @user = User.create user_params

@@ -1,3 +1,14 @@
 {
-  "title": "Người dùng"
+  "title": "Users",
+  "loading": "Loading...",
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "birthday": "Birthday",
+    "phone_number": "Phone number",
+    "role": "Role"
+  },
+  "button": {
+    "detail": "Detail"
+  }
 }

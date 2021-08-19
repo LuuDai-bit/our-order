@@ -1,3 +1,14 @@
 {
-  "title": "Người dùng"
+  "title": "Người dùng",
+  "loading": "Đang tải...",
+  "fields": {
+    "name": "Tên",
+    "email": "Email",
+    "birthday": "Ngày sinh",
+    "phone_number": "Số điện thoại",
+    "role": "Chức danh"
+  },
+  "button": {
+    "detail": "Chi tiết"
+  }
 }

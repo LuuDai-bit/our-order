@@ -4,8 +4,9 @@ import Navbar from "./Components/Layout/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Error from "./Components/Error/404";
 import Home from "./Pages/Home";
-import User from "./Pages/User";
+import Users from "./Pages/Users";
 import Header from "./Components/Layout/Header";
+import UserDetail from "./Pages/UserDetail";
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
               <Home />
             </Route>
             <Route exact path="/users">
-              <User />
+              <Users />
+            </Route>
+            <Route exact path="/users/:id">
+              <UserDetail />
             </Route>
             <Route exact path="*">
               <Error />
