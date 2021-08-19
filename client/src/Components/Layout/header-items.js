@@ -1,10 +1,10 @@
 const headerItem = [
   {
-    name: "Dashboard",
+    name: "home",
     url: "/",
   },
   {
-    name: "User",
+    name: "users",
     url: "/users",
   },
 ];
